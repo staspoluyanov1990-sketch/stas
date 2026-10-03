@@ -83,6 +83,60 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Reviews Telegram Carousel Slider
+  const track = document.querySelector('.reviews-carousel-track');
+  const slides = document.querySelectorAll('.review-slide');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+  const dotsContainer = document.querySelector('.carousel-dots');
+
+  if (track && slides.length > 0) {
+    let currentIndex = 0;
+
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      if (dotsContainer) dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel();
+      });
+    }
+
+    // Auto play every 5 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    }, 5000);
+  }
+
   // AJAX Email Form Submission targeting poluyanov1990@mail.ru via FormSubmit API
   const forms = document.querySelectorAll('.ajax-form');
   forms.forEach(form => {
@@ -120,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } catch (err) {
         statusDiv.className = 'form-status error';
-        statusDiv.innerText = 'Произошла ошибка при отправке. Пожалуйста, позвоните нам по телефону: +7 (499) 450-55-49';
+        statusDiv.innerText = 'Произошла ошибка при отправке. Пожалуйста, позвоните нам по телефону: +7 (999) 000-00-00';
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;

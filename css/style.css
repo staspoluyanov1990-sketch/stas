@@ -3,11 +3,11 @@
    Color Palette:
    - Primary: #ffcc00 / #fbc740 (Vibrant Auto Gold/Yellow)
    - Accent: #e60000 / #ff3333 (Red Accent)
-   - Dark BG: #12151c (Deep Onyx)
-   - Surface BG: #1b1f2b / #222736 (Sleek Dark Slate)
-   - Card BG: #262c3d
-   - Text Primary: #f5f6f8
-   - Text Muted: #9da7be
+   - Dark BG: #0f1219 (Deep Onyx)
+   - Surface BG: #181d28 / #222736 (Sleek Dark Slate)
+   - Card BG: #212736
+   - Text Primary: #f0f3f8
+   - Text Muted: #9aa5bc
    ========================================================================== */
 
 :root {
@@ -137,8 +137,8 @@ header.header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(24, 29, 40, 0.95);
-  backdrop-filter: blur(12px);
+  background: rgba(24, 29, 40, 0.92);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all var(--transition-fast);
 }
@@ -157,7 +157,7 @@ header.header {
 }
 
 .logo img {
-  height: 45px;
+  height: 48px;
   width: auto;
 }
 
@@ -165,7 +165,7 @@ header.header {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-item {
@@ -173,9 +173,9 @@ header.header {
 }
 
 .nav-link {
-  padding: 10px 16px;
+  padding: 10px 14px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-main);
   border-radius: 8px;
   display: flex;
@@ -203,7 +203,8 @@ header.header {
   top: 100%;
   left: 0;
   min-width: 260px;
-  background: var(--surface-bg);
+  background: rgba(24, 29, 40, 0.98);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--card-border);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
@@ -298,12 +299,12 @@ header.header {
   cursor: pointer;
 }
 
-/* Hero Section */
+/* Hero Section with Rich Visual Overlay Background */
 .hero {
   position: relative;
-  padding: 80px 0 100px;
-  background: radial-gradient(circle at 70% 30%, rgba(255, 204, 0, 0.08) 0%, transparent 60%),
-              linear-gradient(180deg, var(--surface-bg) 0%, var(--dark-bg) 100%);
+  padding: 90px 0 110px;
+  background: linear-gradient(180deg, rgba(15, 18, 25, 0.75) 0%, rgba(15, 18, 25, 0.95) 100%),
+              url('../images/img_11.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -318,8 +319,9 @@ header.header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 204, 0, 0.1);
-  border: 1px solid rgba(255, 204, 0, 0.3);
+  background: rgba(255, 204, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 204, 0, 0.4);
   color: var(--primary);
   padding: 6px 16px;
   border-radius: 20px;
@@ -332,11 +334,12 @@ header.header {
   font-size: 3.2rem;
   line-height: 1.15;
   margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 .hero-desc {
   font-size: 1.2rem;
-  color: var(--text-muted);
+  color: #c3ccd9;
   margin-bottom: 30px;
   max-width: 600px;
 }
@@ -379,7 +382,8 @@ header.header {
   position: absolute;
   bottom: -20px;
   left: -20px;
-  background: var(--card-bg);
+  background: rgba(33, 39, 54, 0.95);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--primary);
   padding: 16px 24px;
   border-radius: 12px;
@@ -407,7 +411,7 @@ header.header {
 /* Services Grid Section */
 .services-section {
   padding: 100px 0;
-  background: var(--dark-bg);
+  background: radial-gradient(circle at 50% 0%, rgba(255, 204, 0, 0.05) 0%, transparent 70%), var(--dark-bg);
 }
 
 .services-grid {
@@ -495,10 +499,11 @@ header.header {
   gap: 10px;
 }
 
-/* Advantages Section */
+/* Advantages Section with BG overlay */
 .advantages-section {
   padding: 90px 0;
-  background: var(--surface-bg);
+  background: linear-gradient(180deg, rgba(24, 29, 40, 0.9) 0%, rgba(24, 29, 40, 0.9) 100%),
+              url('../images/img_35.jpeg') center/cover fixed;
   border-top: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
 }
@@ -510,11 +515,18 @@ header.header {
 }
 
 .advantage-card {
-  background: var(--card-bg);
+  background: rgba(33, 39, 54, 0.85);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--card-border);
   border-radius: var(--border-radius);
   padding: 28px;
   text-align: center;
+  transition: transform var(--transition-fast);
+}
+
+.advantage-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
 }
 
 .advantage-number {
@@ -538,7 +550,8 @@ header.header {
 /* Interactive Calculator / Booking Form Banner */
 .booking-banner {
   padding: 80px 0;
-  background: linear-gradient(135deg, rgba(255, 204, 0, 0.1) 0%, rgba(24, 29, 40, 1) 100%), var(--dark-bg);
+  background: linear-gradient(135deg, rgba(255, 204, 0, 0.12) 0%, rgba(24, 29, 40, 0.95) 100%),
+              url('../images/img_40.jpeg') center/cover;
   border-radius: 20px;
   border: 1px solid var(--card-border);
   margin: 60px 0;
@@ -562,7 +575,7 @@ header.header {
 .form-control {
   width: 100%;
   padding: 14px 18px;
-  background: var(--card-bg);
+  background: rgba(33, 39, 54, 0.9);
   border: 1px solid var(--card-border);
   border-radius: 8px;
   color: #fff;
@@ -580,45 +593,86 @@ select.form-control {
   cursor: pointer;
 }
 
-/* Reviews Carousel/Grid */
+/* Telegram Reviews Carousel */
 .reviews-section {
   padding: 100px 0;
   background: var(--dark-bg);
 }
 
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+.reviews-carousel-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  padding: 10px 0;
 }
 
-.review-card {
-  background: var(--surface-bg);
+.reviews-carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 20px;
+}
+
+.review-slide {
+  min-width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.review-slide img {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 16px;
   border: 1px solid var(--card-border);
-  border-radius: var(--border-radius);
-  padding: 24px;
+  box-shadow: var(--shadow-lg);
 }
 
-.review-header {
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.carousel-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
 }
 
-.reviewer-name {
-  font-weight: 700;
+.carousel-btn:hover {
+  background: var(--primary);
+  color: #111;
 }
 
-.stars {
-  color: var(--primary);
-  font-size: 0.9rem;
+.carousel-dots {
+  display: flex;
+  gap: 8px;
 }
 
-.review-text {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  font-style: italic;
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--card-border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dot.active {
+  background: var(--primary);
+  width: 24px;
+  border-radius: 6px;
 }
 
 /* Branches / Locations Section */
@@ -735,7 +789,7 @@ footer.footer {
 }
 
 .footer-logo img {
-  height: 40px;
+  height: 44px;
   margin-bottom: 16px;
 }
 
@@ -894,10 +948,11 @@ footer.footer {
   100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); }
 }
 
-/* Page Banner header for inner pages */
+/* Page Banner header for inner pages with BG */
 .page-banner {
   padding: 60px 0;
-  background: linear-gradient(180deg, var(--surface-bg) 0%, var(--dark-bg) 100%);
+  background: linear-gradient(180deg, rgba(15, 18, 25, 0.85) 0%, rgba(15, 18, 25, 0.98) 100%),
+              url('../images/img_12.png') center/cover no-repeat;
   border-bottom: 1px solid var(--card-border);
 
   margin-bottom: 50px;

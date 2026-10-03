@@ -11,33 +11,86 @@
 </head>
 <body>
 
+  <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-info">
-        <div class="item"><i class="fa-solid fa-location-dot text-highlight"></i> 3 филиала в Москве</div>
+        <div class="item"><i class="fa-solid fa-location-dot text-highlight"></i> Демо-филиал в Москве: ул. Демонстрационная, д. 10</div>
         <div class="item"><i class="fa-solid fa-clock text-highlight"></i> Ежедневно с 09:00 до 21:00</div>
       </div>
       <div class="top-bar-contact">
-        <a href="tel:+74994505549" class="phone-link"><i class="fa-solid fa-phone"></i> +7 (499) 450-55-49</a>
+        <a href="tel:+79990000000" class="phone-link"><i class="fa-solid fa-phone"></i> +7 (999) 000-00-00</a>
       </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container header-container">
       <a href="index.html" class="logo">
-        <img src="images/logo.svg" alt="АП Сервис">
+        <img src="images/logo.svg" alt="АП Сервис - Автосервис Ильдара">
       </a>
+
       <nav>
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-          <li class="nav-item"><a href="dvigatel.html" class="nav-link">Ремонт ДВС</a></li>
-          <li class="nav-item active"><a href="diagnostika-podveski.html" class="nav-link">Подвеска</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Ремонт <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu mega-menu">
+              <a href="dvigatel.html"><i class="fa-solid fa-engine"></i> Ремонт двигателя</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-car-side"></i> Замена амортизаторов</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-gear"></i> Замена ГРМ</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-oil-can"></i> Замена масла в АКПП</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-oil-can"></i> Замена масла в ДВС</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-compact-disc"></i> Замена колодок и дисков</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-dharmachakra"></i> Замена ступичного подшипника</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-wrench"></i> Замена сайлентблоков</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-temperature-arrow-down"></i> Замена антифриза</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-snowflake"></i> Заправка кондиционера</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown active">
+            <a href="#" class="nav-link">
+              Диагностика <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="computernaya-diagnostika.html">Компьютерная диагностика</a>
+              <a href="diagnostika-podveski.html">Диагностика подвески</a>
+              <a href="computernaya-diagnostika.html">Диагностика ДВС</a>
+              <a href="computernaya-diagnostika.html">Диагностика трансмиссии</a>
+              <a href="computernaya-diagnostika.html">Диагностика тормозной системы</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Марки <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu mega-menu">
+              <a href="to-geely.html">ТО Geely</a>
+              <a href="to-geely.html">ТО Haval</a>
+              <a href="to-geely.html">ТО Chery</a>
+              <a href="to-geely.html">ТО Changan</a>
+              <a href="to-geely.html">ТО Jaecoo</a>
+              <a href="to-geely.html">ТО Jetour</a>
+              <a href="to-geely.html">ТО Exeed</a>
+              <a href="to-geely.html">ТО Tank</a>
+            </div>
+          </li>
+
           <li class="nav-item"><a href="price.html" class="nav-link">Цены</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link">Вопрос-ответ</a></li>
+          <li class="nav-item"><a href="index.html#branches" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
+
       <div class="header-actions">
         <button class="btn btn-primary" data-open-modal data-service="Диагностика подвески"><i class="fa-solid fa-calendar-check"></i> Записаться</button>
+        <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </header>
@@ -74,11 +127,52 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="АП Сервис">
+          </div>
+          <p class="footer-desc">Сеть профессиональных автотехцентров Ильдара в Москве. Честный сервис, прозрачные цены и гарантия на все виды работ.</p>
+          <p style="color: var(--primary); font-weight: 700;"><i class="fa-solid fa-phone"></i> +7 (999) 000-00-00</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul class="footer-links">
+            <li><a href="dvigatel.html">Ремонт двигателя</a></li>
+            <li><a href="computernaya-diagnostika.html">Компьютерная диагностика</a></li>
+            <li><a href="diagnostika-podveski.html">Диагностика подвески</a></li>
+            <li><a href="to-geely.html">ТО китайских авто</a></li>
+            <li><a href="price.html">Цены на работы</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">О компании</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="index.html#branches">Адреса сервисов</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Демо-Филиалы</h4>
+          <ul class="footer-links">
+            <li>ул. Демонстрационная, д. 10</li>
+            <li>пр-кт Демонстрационный, д. 25</li>
+            <li>пер. Тестовый, д. 5</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <div>&copy; 2025 АП Сервис - Автосервис Ильдара.</div>
-        <div>Отправка заявок: <strong>poluyanov1990@mail.ru</strong></div>
+        <div>&copy; 2025 АП Сервис - Демо-сайт. Все права защищены.</div>
+        <div>Отправка заявок на почту: <strong>poluyanov1990@mail.ru</strong></div>
       </div>
     </div>
   </footer>
