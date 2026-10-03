@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АП Сервис - Сеть автотехцентров Ильдара в Москве</title>
+  <meta name="description" content="АП Сервис — профессиональный автосервис Ильдара. Диагностика, ремонт двигателя, ТО, подвески, тормозов и электрики в Москве. Гарантия качества.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <div class="item"><i class="fa-solid fa-location-dot text-highlight"></i> 3 филиала в Москве: Декабристов, Остаповский проезд, Бехтерева</div>
+        <div class="item"><i class="fa-solid fa-clock text-highlight"></i> Ежедневно с 09:00 до 21:00</div>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+74994505549" class="phone-link"><i class="fa-solid fa-phone"></i> +7 (499) 450-55-49</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="АП Сервис - Автосервис Ильдара">
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Главная</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Ремонт <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu mega-menu">
+              <a href="dvigatel.html"><i class="fa-solid fa-engine"></i> Ремонт двигателя</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-car-side"></i> Замена амортизаторов</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-gear"></i> Замена ГРМ</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-oil-can"></i> Замена масла в АКПП</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-oil-can"></i> Замена масла в ДВС</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-compact-disc"></i> Замена колодок и дисков</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-dharmachakra"></i> Замена ступичного подшипника</a>
+              <a href="diagnostika-podveski.html"><i class="fa-solid fa-wrench"></i> Замена сайлентблоков</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-temperature-arrow-down"></i> Замена антифриза</a>
+              <a href="dvigatel.html"><i class="fa-solid fa-snowflake"></i> Заправка кондиционера</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Диагностика <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="computernaya-diagnostika.html">Компьютерная диагностика</a>
+              <a href="diagnostika-podveski.html">Диагностика подвески</a>
+              <a href="computernaya-diagnostika.html">Диагностика ДВС</a>
+              <a href="computernaya-diagnostika.html">Диагностика трансмиссии</a>
+              <a href="computernaya-diagnostika.html">Диагностика тормозной системы</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">
+              Марки <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu mega-menu">
+              <a href="to-geely.html">ТО Geely</a>
+              <a href="to-geely.html">ТО Haval</a>
+              <a href="to-geely.html">ТО Chery</a>
+              <a href="to-geely.html">ТО Changan</a>
+              <a href="to-geely.html">ТО Jaecoo</a>
+              <a href="to-geely.html">ТО Jetour</a>
+              <a href="to-geely.html">ТО Exeed</a>
+              <a href="to-geely.html">ТО Tank</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="price.html" class="nav-link">Цены</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link">Вопрос-ответ</a></li>
+          <li class="nav-item"><a href="#branches" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary" data-open-modal><i class="fa-solid fa-calendar-check"></i> Записаться</button>
+        <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text-side">
+        <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Официальный автотехцентр Ильдара</div>
+        <h1>Профессиональный <span class="text-highlight">автосервис</span> в Москве</h1>
+        <p class="hero-desc">Обслуживание и комплексный ремонт автомобилей с честной гарантией. Прозрачные цены, опытные мастера и современное дилерское оборудование.</p>
+
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check text-highlight"></i>
+            <span>Гарантия до 1 года</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check text-highlight"></i>
+            <span>Собственный склад запчастей</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fa-solid fa-circle-check text-highlight"></i>
+            <span>3 филиала в Москве</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-open-modal><i class="fa-solid fa-wrench"></i> Записаться на ремонт</button>
+          <a href="#services" class="btn btn-outline"><i class="fa-solid fa-list"></i> Все услуги</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="images/img_1.png" alt="АП Сервис Автосервис Ильдара">
+        <div class="hero-experience-card">
+          <div class="number">10+</div>
+          <div class="text">Лет безупречного<br>качества и доверия</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages-section">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают <span class="text-highlight">АП Сервис</span></h2>
+      <p class="section-subtitle">Мы выстроили стандарты, которым можно доверять на 100%</p>
+
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-number">01</div>
+          <div class="advantage-title">Честная диагностика</div>
+          <div class="advantage-desc">Не приписываем лишних работ. Показываем все неисправности на подъемнике и согласуем каждую деталь.</div>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-number">02</div>
+          <div class="advantage-title">Дилерское оборудование</div>
+          <div class="advantage-desc">Современные сканеры, стенды сход-развала 3D и спец-инструмент под любые марки машин.</div>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-number">03</div>
+          <div class="advantage-title">Запчасти в наличии</div>
+          <div class="advantage-desc">Оригинальные детали и проверенные качественные аналоги всегда на нашем складе.</div>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-number">04</div>
+          <div class="advantage-title">Комфортная зона ожидания</div>
+          <div class="advantage-desc">Уютный диван, вкусный кофе, Wi-Fi и видеонаблюдение за ремзоной в реальном времени.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Services Grid -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title">Популярные <span class="text-highlight">услуги и цены</span></h2>
+      <p class="section-subtitle">Выполняем полный спектр работ по техническому обслуживанию и ремонту</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-microchip fa-2x"></i></div>
+            <h3>Компьютерная диагностика</h3>
+            <p>Считывание ошибок всех электронных блоков, анализ параметров работы ДВС, АКПП и датчиков.</p>
+          </div>
+          <div>
+            <div class="service-price">от 1 500 ₽</div>
+            <a href="computernaya-diagnostika.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-engine fa-2x"></i></div>
+            <h3>Ремонт двигателя (ДВС)</h3>
+            <p>Капитальный и текущий ремонт бензиновых и дизельных моторов, замена ГРМ, замер компрессии.</p>
+          </div>
+          <div>
+            <div class="service-price">от 3 500 ₽</div>
+            <a href="dvigatel.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-car-side fa-2x"></i></div>
+            <h3>Диагностика и ремонт подвески</h3>
+            <p>Замена амортизаторов, рычагов, сайлентблоков, ступичных подшипников и стойки стабилизатора.</p>
+          </div>
+          <div>
+            <div class="service-price">от 1 ₽ (по акции)</div>
+            <a href="diagnostika-podveski.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-car-battery fa-2x"></i></div>
+            <h3>Регулярное ТО и замена масел</h3>
+            <p>Плановое ТО автомобилей любых марок (Geely, Haval, Chery, Toyota и др.) с сохранением гарантии.</p>
+          </div>
+          <div>
+            <div class="service-price">от 2 000 ₽</div>
+            <a href="to-geely.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-compact-disc fa-2x"></i></div>
+            <h3>Обслуживание тормозной системы</h3>
+            <p>Замена тормозных колодок, дисков, суппортов, прокачка и замена тормозной жидкости.</p>
+          </div>
+          <div>
+            <div class="service-price">от 1 200 ₽</div>
+            <a href="price.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-fan fa-2x"></i></div>
+            <h3>Заправка и ремонт кондиционера</h3>
+            <p>Диагностика герметичности, заправка фреоном, промывка радиаторов и замена компрессора.</p>
+          </div>
+          <div>
+            <div class="service-price">от 2 500 ₽</div>
+            <a href="price.html" class="btn-link">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Form Banner -->
+  <section class="container">
+    <div class="booking-banner">
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Быстрая запись на <span class="text-highlight">ремонт или ТО</span></h2>
+        <p style="color: var(--text-muted);">Заполните форму, и наш старший мастер перезвонит вам в течение 5 минут для расчета стоимости.</p>
+
+        <form class="booking-form ajax-form">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" class="form-control" placeholder="Номер телефона" required>
+          </div>
+          <div class="form-group">
+            <select name="service" class="form-control">
+              <option value="Диагностика">Диагностика</option>
+              <option value="Ремонт ДВС">Ремонт ДВС</option>
+              <option value="Ремонт подвески">Ремонт подвески</option>
+              <option value="Техническое обслуживание">Техническое обслуживание (ТО)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Записаться</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <div class="container">
+      <h2 class="section-title">Отзывы наших <span class="text-highlight">клиентов</span></h2>
+      <p class="section-subtitle">Оценка 4.9 на Яндекс Картах на основе более 1500 отзывов</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-name">Михаил К.</div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+          <p class="review-text">«Обслуживаю здесь свой Haval F7. Ребята знают китайцев отлично! Нашли причину стука в подвеске за 10 минут, хотя у дилера мурыжили месяц. Цены адекватные!»</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-name">Алексей В.</div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+          <p class="review-text">«Делал капитальный ремонт ДВС на Skoda Octavia. Все запчасти предоставили сами, дали гарантию 1 год. Проехал уже 15 000 км — мотор работает идеально!»</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-name">Елена С.</div>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+          <p class="review-text">«Приехала на диагностику подвески по рекомендации. Очень чистая ремзона, приветливый мастер Александр. Показал все недочеты, лишнего не навязывал.»</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Branches / Locations Section -->
+  <section class="branches-section" id="branches">
+    <div class="container">
+      <h2 class="section-title">Наши филиалы <span class="text-highlight">в Москве</span></h2>
+      <p class="section-subtitle">Выберите ближайший автосервис АП Сервис</p>
+
+      <div class="branches-grid">
+        <div class="branch-card">
+          <div class="branch-title"><i class="fa-solid fa-location-dot"></i> м. Отрадное</div>
+          <div class="branch-info">
+            <div><strong>Адрес:</strong> улица Декабристов, 47</div>
+            <div><strong>Телефон:</strong> +7 (499) 450-55-49</div>
+            <div><strong>Время работы:</strong> Пн-Вс: 09:00 - 21:00</div>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" data-open-modal><i class="fa-solid fa-route"></i> Записаться в Отрадное</button>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-title"><i class="fa-solid fa-location-dot"></i> м. Текстильщики</div>
+          <div class="branch-info">
+            <div><strong>Адрес:</strong> Остаповский проезд 6, стр. 1</div>
+            <div><strong>Телефон:</strong> +7 (499) 450-55-49</div>
+            <div><strong>Время работы:</strong> Пн-Вс: 09:00 - 21:00</div>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" data-open-modal><i class="fa-solid fa-route"></i> Записаться на Остаповский</button>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-title"><i class="fa-solid fa-location-dot"></i> м. Кантемировская</div>
+          <div class="branch-info">
+            <div><strong>Адрес:</strong> улица Бехтерева, 12</div>
+            <div><strong>Телефон:</strong> +7 (499) 450-55-49</div>
+            <div><strong>Время работы:</strong> Пн-Вс: 09:00 - 21:00</div>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" data-open-modal><i class="fa-solid fa-route"></i> Записаться на Бехтерева</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3 class="modal-title">Онлайн запись</h3>
+      <p class="modal-desc">Оставьте контакты, и мы перезвоним вам в течение 5 минут для консультации.</p>
+
+      <form class="modal-form ajax-form">
+        <div class="form-group">
+          <label style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px;">Ваше имя</label>
+          <input type="text" name="name" class="form-control" placeholder="Иван" required>
+        </div>
+        <div class="form-group">
+          <label style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px;">Номер телефона</label>
+          <input type="tel" name="phone" class="form-control" placeholder="+7 (999) 000-00-00" required>
+        </div>
+        <div class="form-group">
+          <label style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px;">Выберите услугу</label>
+          <select name="service" id="modalServiceSelect" class="form-control">
+            <option value="Компьютерная диагностика">Компьютерная диагностика</option>
+            <option value="Ремонт ДВС / Двигатель">Ремонт ДВС / Двигатель</option>
+            <option value="Диагностика и ремонт подвески">Диагностика и ремонт подвески</option>
+            <option value="Техническое обслуживание (ТО)">Техническое обслуживание (ТО)</option>
+            <option value="Замена масла">Замена масла</option>
+            <option value="Заправка кондиционера">Заправка кондиционера</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Call Button -->
+  <div class="floating-call-btn" data-open-modal title="Заказать звонок">
+    <i class="fa-solid fa-phone"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="АП Сервис">
+          </div>
+          <p class="footer-desc">Сеть профессиональных автотехцентров Ильдара в Москве. Честный сервис, прозрачные цены и гарантия на все виды работ.</p>
+          <p style="color: var(--primary); font-weight: 700;"><i class="fa-solid fa-phone"></i> +7 (499) 450-55-49</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul class="footer-links">
+            <li><a href="dvigatel.html">Ремонт двигателя</a></li>
+            <li><a href="computernaya-diagnostika.html">Компьютерная диагностика</a></li>
+            <li><a href="diagnostika-podveski.html">Диагностика подвески</a></li>
+            <li><a href="to-geely.html">ТО китайских авто</a></li>
+            <li><a href="price.html">Цены на работы</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">О компании</a></li>
+            <li><a href="faq.html">Вопросы и ответы</a></li>
+            <li><a href="#branches">Адреса сервисов</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Филиалы</h4>
+          <ul class="footer-links">
+            <li>ул. Декабристов, 47</li>
+            <li>Остаповский проезд 6, стр. 1</li>
+            <li>ул. Бехтерева, 12</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2025 АП Сервис - Автосервис Ильдара. Все права защищены.</div>
+        <div>Отправка заявок на почту: <strong>poluyanov1990@mail.ru</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

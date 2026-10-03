@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техническое обслуживание (ТО) Geely, Haval, Chery в Москве - АП Сервис</title>
+  <meta name="description" content="Обслуживание и плановое ТО китайских автомобилей Geely, Haval, Chery, Changan с сохранением гарантии в АП Сервис.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <div class="item"><i class="fa-solid fa-location-dot text-highlight"></i> 3 филиала в Москве</div>
+        <div class="item"><i class="fa-solid fa-clock text-highlight"></i> Ежедневно с 09:00 до 21:00</div>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+74994505549" class="phone-link"><i class="fa-solid fa-phone"></i> +7 (499) 450-55-49</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="АП Сервис">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item active"><a href="to-geely.html" class="nav-link">ТО Geely / Haval</a></li>
+          <li class="nav-item"><a href="price.html" class="nav-link">Цены</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link">Вопрос-ответ</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-primary" data-open-modal data-service="ТО Geely / Haval"><i class="fa-solid fa-calendar-check"></i> Записаться</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>ТО Geely и китайских авто</span>
+      </div>
+      <h1>Техническое обслуживание Geely, Haval, Chery, Changan</h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem;">Профессиональное регламентное обслуживание с использованием качественных расходников и спецмасел.</p>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="container">
+      <div class="content-box">
+        <h2>Плановое ТО автомобилей китайских марок</h2>
+        <p>Китайские автомобили современного поколения оснащены высокотехнологичными турбомоторами и роботизированными коробками передач. Они требуют правильного подбора масел и строгого соблюдения регламента ТО.</p>
+
+        <h3>Что входит в стандартное ТО:</h3>
+        <ul>
+          <li>Замена моторного масла и масляного фильтра</li>
+          <li>Замена воздушного и салонного фильтра</li>
+          <li>Комплексный осмотр подвески, рулевого управления и тормозов</li>
+          <li>Компьютерная диагностика электронных систем и сброс сервисного интервала</li>
+          <li>Проверка уровня всех технических жидкостей</li>
+        </ul>
+
+        <div style="margin-top: 30px;">
+          <button class="btn btn-primary" data-open-modal data-service="ТО Geely"><i class="fa-solid fa-wrench"></i> Записаться на ТО от 2 500 ₽</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2025 АП Сервис - Автосервис Ильдара.</div>
+        <div>Отправка заявок: <strong>poluyanov1990@mail.ru</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3 class="modal-title">Запись на ТО</h3>
+      <form class="modal-form ajax-form">
+        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя" required></div>
+        <div class="form-group"><input type="tel" name="phone" class="form-control" placeholder="Телефон" required></div>
+        <input type="hidden" name="service" value="ТО Geely / Haval">
+        <button type="submit" class="btn btn-primary">Записаться</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

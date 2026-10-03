@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диагностика и ремонт подвески в Москве - АП Сервис</title>
+  <meta name="description" content="Полная диагностика и ремонт ходовой части, подвески, замена амортизаторов, рычагов и сайлентблоков в Москве.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <div class="item"><i class="fa-solid fa-location-dot text-highlight"></i> 3 филиала в Москве</div>
+        <div class="item"><i class="fa-solid fa-clock text-highlight"></i> Ежедневно с 09:00 до 21:00</div>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+74994505549" class="phone-link"><i class="fa-solid fa-phone"></i> +7 (499) 450-55-49</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="АП Сервис">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="dvigatel.html" class="nav-link">Ремонт ДВС</a></li>
+          <li class="nav-item active"><a href="diagnostika-podveski.html" class="nav-link">Подвеска</a></li>
+          <li class="nav-item"><a href="price.html" class="nav-link">Цены</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-primary" data-open-modal data-service="Диагностика подвески"><i class="fa-solid fa-calendar-check"></i> Записаться</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a> / <span>Диагностика подвески</span>
+      </div>
+      <h1>Комплексная диагностика и ремонт подвески</h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem;">Безопасность и комфорт вашего авто. Осмотр на подъемнике и проверка всех узлов.</p>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="container">
+      <div class="content-box">
+        <h2>Диагностика подвески всего за 1 рубль при последующем ремонте!</h2>
+        <p>Подвеска автомобиля постоянно подвергается высоким нагрузкам. Появление стуков, люфтов, ухудшение управляемости — прямые сигналы к осмотру ходовой части.</p>
+
+        <h3>Что включает осмотр ходовой:</h3>
+        <ul>
+          <li>Проверка амортизаторов, пружин и опорных подшипников</li>
+          <li>Осмотр сайлентблоков, рычагов, шаровых опор</li>
+          <li>Проверка стойки и втулок стабилизатора</li>
+          <li>Контроль ступичных подшипников и рулевых наконечников</li>
+          <li>Осмотр тормозных дисков, колодок и шлангов</li>
+        </ul>
+
+        <div style="margin-top: 30px;">
+          <button class="btn btn-primary" data-open-modal data-service="Диагностика подвески"><i class="fa-solid fa-car-side"></i> Записаться на диагностику подвески</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2025 АП Сервис - Автосервис Ильдара.</div>
+        <div>Отправка заявок: <strong>poluyanov1990@mail.ru</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3 class="modal-title">Запись на сервис</h3>
+      <form class="modal-form ajax-form">
+        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя" required></div>
+        <div class="form-group"><input type="tel" name="phone" class="form-control" placeholder="Телефон" required></div>
+        <input type="hidden" name="service" value="Диагностика подвески">
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
