@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Intersection Observer for Scroll Reveal Animations
+  const observerOptions = {
+    threshold: 0.15
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
   // Mobile Menu Toggle
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navMenu = document.querySelector('.nav-menu');
@@ -130,11 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Auto play every 5 seconds
+    // Auto play every 6 seconds
     setInterval(() => {
       currentIndex = (currentIndex + 1) % slides.length;
       updateCarousel();
-    }, 5000);
+    }, 6000);
   }
 
   // AJAX Email Form Submission targeting poluyanov1990@mail.ru via FormSubmit API
